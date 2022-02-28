@@ -1,0 +1,49 @@
+<!doctype=html>
+<html>
+<head>
+<h1 style="text-align:center;font-size:80px;color:red;"><b>Simple Interest Calculator</B></h1>
+<!--<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">-->
+
+<style>
+.result{
+font-size:30px;
+color: white;
+}
+
+</style>
+
+</head>
+<body style="background-color:rgba(116,196,155,0.9);">
+
+<p style="text-align:center;font-size:35px"><B>Enter the Details</B></p>
+
+<form style="margin-left:11.5cm;font-size:29px;background-color:#c7b8b8;width:600px;" action="{{ url_for('sint')}}" method="POST">
+
+
+<label for="principal"> Principal: </label>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="text" id="principal" name="principal" required="required" placeholder="Principal Amount"><br><br>
+
+<label for="rate"> Rate: :</label>
+&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="text" id="rate" name="rate" required="required" placeholder="Interest Rate"><br><br>
+
+<label for="time"> Time: </label>
+&nbsp&nbsp
+<input type="text" id="time" name="time" required="required" placeholder="In months">
+
+<br><br>
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="submit" value="Submit" style="height:50px;width:200px;color:red;background-color:black;font-size:30px;">
+
+
+
+
+
+</body>
+</html>

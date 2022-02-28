@@ -1,0 +1,27 @@
+<!doctype html>
+<head>
+</head>
+<body style="background-color:rgba(0,136,255,0.48);">
+<p style="text-align:center;font-size:35px"><B>Enter Your Details</B></p>
+
+<form style="margin-left:11.5cm;font-size:29px;" action="{{ url_for('details')}}"method="POST">
+
+
+<label for="fname">First Name: </label>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="text" id="fname" name="fname" required="required"><br><br>
+
+<label for="lname">Last Name:</label>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="text" id="lname" name="lname" required="required"><br><br>
+
+<label for="email">Email: </label>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="email" id="email" name="email" required="required" placeholder="Email">
+<br><br><br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="submit" value="Submit" style="height:50px;width:200px;color:red;background-color:rgba(224,178,178,0.62);font-size:30px;">
+
+
+</body>
+</html>

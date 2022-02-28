@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<style>
+table, th, td{
+border:1px solid black;
+width:19cm;
+height:1.5cm;
+margin-left:350px;
+font-size:25px;
+}
+</style>
+</head>
+<body style="background-color:rgba(0,255,255,0.48);">	
+<p style="color:red;text-align:center;font-size:65px;">{{result}}</p>
+
+
+<form style="margin-left:11.5cm;font-size:30px;" action="{{ url_for('table')}}"method="POST">
+<label for="months">Number of Months:</label>
+<select id="months" name="months" required="required">
+<option disabled selected value>--Select an Option--</option>
+<option value="3">3 Months</option>
+<option value="6">6 Months</option>
+<option value="9">9 Months</option>
+<option value="12">12 Months</option>
+<option value="18">18 Months</option>
+<option value="24">24 Months</option>
+<option value="36">36 Months</option>
+<option value="48">48 Months</option>
+<option value="60">60 Months</option>
+</select>
+<br><br>
+
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="submit" value="Submit" style="height:50px;width:200px;color:red;background-color:black;font-size:30px;">
+</form>
+<br><br><br>
+
+
+<table>
+<tr>
+    <td><B>Name</B></td>
+<td>{{name}}</td>
+</tr>
+
+<tr>
+<td><B>Income</B></td>
+<td>{{income}}</td>
+</tr>
+
+<tr>
+<td><B>Loan</B></td>
+<td>{{loan}}</td>
+</tr>
+
+<tr>
+<td><B>Interest Rate</B></td>
+<td>{{interest}}</td>
+</tr>
+
+
+<tr>
+<td><B>Final Amount</B></td>
+<td>{{famount}}</td>
+</tr>
+
+<tr>
+<td><B>EMI</B></td>
+<td>{{emi}}</td>
+</tr>
+</table>
+
+
+<p style="color:red;text-align:center;font-size:65px;">{{mont}}</p>
+
+
+</body>
+</html>

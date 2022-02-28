@@ -1,0 +1,6 @@
+client ID = 0oapks70wApdX2Uo65d6
+Client Secret = KAqO3RodACMOM5fWEho4ZBB8FbvPjtQ_Kg9dc4n8
+
+okta domain =  dev-26716080.okta.com
+
+token value=  00q-XtUK6xrMA_5zD55y74d77aWocbMooSu4e1sjYz

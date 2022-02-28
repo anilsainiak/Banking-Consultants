@@ -1,0 +1,74 @@
+<!doctype=html>
+<html>
+<head>
+<h1 style="text-align:center;font-size:80px;color:red;"><b>Bank Loan Prediction</B></h1>
+<!--<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">-->
+
+</head>
+<body style="background-color:rgba(0,136,255,0.48);">
+
+<p style="text-align:center;font-size:35px"><B>Enter the Details</B></p>
+
+<form style="margin-left:11.5cm;font-size:29px;background-color: rgba(160,129,72,0.55);margin-right:17cm;margin-bottom: 1cm;" action="{{ url_for('predict')}}" method="POST">
+
+
+<label for="income"> Income: </label>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="text" id="income" name="income" required="required"><br><br>
+
+<label for="Loan"> Loan Req. :</label>
+&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="text" id="loan" name="loan" required="required"><br><br>
+
+<label for="credit"> Credit Score : </label>
+&nbsp&nbsp
+<select id="credit" name="credit" required="required">
+<option disabled selected value>--Select an Option--</option>
+<option value="0"> &nbsp&nbsp   0    &nbsp&nbsp</option>
+<option value="1"> &nbsp&nbsp   1   &nbsp&nbsp  </option>
+</select>
+<br><br>
+
+<label for="property">Property Area:</label>
+&nbsp
+<select id="property" name="property" required="required">
+<option disabled selected value>--Select an Option--</option>
+<option value="0">&nbspUrban&nbsp</option>
+<option value="1">&nbspRural&nbsp</option>
+<option value="2">&nbspSemiUrban&nbsp</option>
+</select>
+<br><br>
+
+<label for="education">Education:</label>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<select id="education" name="education" required="required">
+<option disabled selected value>--Select an Option--</option>
+<option value="0">&nbspGraduate&nbsp</option>
+<option value="1">&nbspNot Graduate&nbsp</option>
+</select>
+<br><br>
+
+<label for="employeyment">Employed:</label>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<select id="employment" name="employeyment" required="required">
+<option disabled selected value>--Select an Option--</option>
+<option value="0">Self Employed</option>
+<option value="1">Government Employee</option>
+</select>
+<br><br>
+
+
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="submit" value="Submit" style="height:50px;width:200px;color:red;background-color:black;font-size:30px;">
+
+<br><br><br>
+<strong style="color:red">{{result}}</strong>
+</form>
+
+</body>
+</html>
